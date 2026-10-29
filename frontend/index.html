@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAG MCQ Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>RAG MCQ Generator</h1>
+        <p>Upload a PDF and test your knowledge with 5 AI-generated questions.</p>
+
+        <section class="upload-section">
+            <input type="file" id="pdfFile" accept=".pdf">
+            <button id="generateBtn">Generate Quiz</button>
+            <p id="status" role="status"></p>
+        </section>
+
+        <form id="quizForm" hidden>
+            <div id="questions"></div>
+            <button type="submit">Submit Answers</button>
+        </form>
+
+        <section id="results" hidden>
+            <h2>Your Results</h2>
+            <p id="score"></p>
+            <div id="review"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
